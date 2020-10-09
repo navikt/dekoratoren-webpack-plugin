@@ -1,11 +1,15 @@
 {
   "name": "@navikt/dekoratoren-webpack-plugin",
   "version": "1.0.0",
-  "description": "https://github.com/navikt/dekoratoren-webpack-plugin",
+  "description": "Plugin for Nav-dekoratøren",
   "main": "src/index.js",
   "private": false,
   "scripts": {
     "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/navikt/dekoratoren-webpack-plugin.git"
   },
   "author": "michael.johansen@nav.no",
   "license": "MIT",
