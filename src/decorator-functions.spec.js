@@ -8,7 +8,6 @@ test('should inject stuff', async () => {
   const testHtml = fs.readFileSync(testHtmlPath);
   const parts = await fetchDekoratorParts();
   const mergedHtml = mergeDekoratorParts(testHtml, parts);
-  fs.writeFileSync("test.html",mergedHtml);
   const $ = cheerio.load(mergedHtml);
   expect($("body #decorator-footer").length).toBeGreaterThan(0);
   expect($("body #decorator-header").length).toBeGreaterThan(0);

@@ -1,17 +1,28 @@
 {
   "name": "@navikt/dekoratoren-webpack-plugin",
-  "version": "1.0.0",
-  "description": "https://github.com/navikt/nav-dekorator-webpack-plugin",
+  "version": "1.0.1",
+  "description": "Plugin for Nav-dekoratøren",
   "main": "src/index.js",
+  "private": false,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/navikt/dekoratoren-webpack-plugin.git"
+  },
+  "author": "michael.johansen@nav.no",
   "license": "MIT",
   "dependencies": {
     "cheerio": "^1.0.0-rc.3"
   },
   "devDependencies": {
-    "jest": "^26.4.2"
-  }
+    "jest": "^26.4.2",
+    "@types/cheerio": "*"
+  },
+  "files": [
+    "/src/index.js",
+    "/src/decorator-functions.js",
+    "/src/console-once.js"
+  ]
 }
